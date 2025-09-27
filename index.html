@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayman Osman - Full Stack Developer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        /* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    color: #333;
+    background: #fff;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #2c3e50;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 2;
+}
+
+h1 {
+    color: #2c3e50;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+h2 {
+    color: #34495e;
+    font-size: 1.3em;
+    margin: 5px 0;
+}
+
+/* QR Code */
+.qrcode {
+    flex: 1;
+    text-align: right;
+    padding: 5px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 25px;
+    page-break-inside: avoid;
+}
+
+.section-title {
+    color: #2980b9;
+    font-size: 1.3em;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.job-title {
+    font-weight: bold;
+    color: #2c3e50;
+    font-size: 1.1em;
+}
+
+.company {
+    color: #7f8c8d;
+    font-style: italic;
+    margin: 3px 0;
+}
+
+.date {
+    color: #95a5a6;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+li {
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+/* Print Styles */
+@media print {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 15px;
+        line-height: 1.4;
+        color: #000;
+        background: #fff;
+    }
+
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    /* Keep QR Code Visible */
+    .qrcode {
+        display: block !important;
+        text-align: right;
+        margin-top: -50px;
+    }
+
+    /* Remove underlines for links */
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    /* Prevent Page Breaks */
+    .section, .experience-item {
+        page-break-inside: avoid;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="contact-info">
+            <h1>AYMAN OSMAN</h1>
+            <h2>Full Stack Developer | Web & Mobile App Development | ERP (Odoo) Expert | Docker, RESTful APIs & Cloud Solutions</h2>
+            <p>
+                📍 Riyadh, Saudi Arabia<br>
+                📧 <a href="mailto:ayman4work44@gmail.com">ayman4work44@gmail.com</a><br>
+                📱 +966531505513<br>
+                🔗 <a href="https://linkedin.com/in/ayman-osman-27bb4bb1">LinkedIn</a><br>
+                💻 <a href="https://github.com/ayman12015">GitHub</a>
+            </p>
+        </div>
+        <div class="qrcode" id="qrcode"></div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <ul>
+            <li>Full Stack Developer with 5+ years of experience in **web & mobile development** and **ERP systems**.</li>
+            <li>Proven expertise in **government digital transformation projects**, handling **500k+ monthly API requests**.</li>
+            <li>Certified **AWS/Azure developer** with expertise in **Odoo customization & secure system integrations**.</li>
+            <li>Successfully delivered  enterprise projects** with **99.9% uptime**.</li>
+            <li>Strong problem-solving skills and ability to work in **cross-functional teams**.</li>
+        </ul>
+    </div>
+
+    
+
+    <div class="section">
+        <div class="section-title">Technical Skills</div>
+        <ul>
+            <li><strong>Frontend:</strong> React, Angular, Vue, HTML5, CSS3, JavaScript (ES6+), Next js</li>
+            <li><strong>Backend:</strong> Node.js, Django, .NET Core, Laravel, Express</li>
+            <li><strong>Databases:</strong> MySQL, MongoDB, PostgreSQL, Redis</li>
+            <li><strong>DevOps:</strong> Docker, AWS, Azure, Jenkins, RESTful APIs</li>
+            <li><strong>ERP:</strong> Odoo, SAP Business One, Custom ERP Development</li>
+            <li><strong>Mobile:</strong> React Native, Android SDK, Flutter</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+<div class="section">
+    <div class="section-title">Notable Projects</div>
+    <ul>
+        <li>
+            <strong>Emirate of Asir Citizen Portal</strong>  
+            <br>Developed a website using **Figma, HTML5, CSS, and Drupal**.  
+            <br><a href="https://portal.aseer.gov.sa/">View Project</a>
+        </li>
+        <li>
+            <strong>Employee Management System (Emirate of Asir)</strong>  
+            <br>Built an **employee leave & vacation management system** integrated with **Active Directory & OTP**.  
+            <br><a href="https://www4.aseer.gov.sa/">View Project</a>
+        </li>
+        <li>
+            <strong>Citizen Services Portal (Emirate of Asir)</strong>  
+            <br>Developed an online **marriage, prisoner release, and treatment request service** using **Laravel & PHP**.  
+            <br><a href="https://apps.aseer.gov.sa/">View Project</a>
+        </li>
+        <li>
+            <strong>Golden Accounting ERP System</strong>  
+            <br>Designed a **multi-vendor ERP system** for pharmacies, shops, and restaurants using **C# & ASP.NET**.  
+            <br><a href="https://golden-acc.com/">View Project</a>
+        </li>
+        <li>
+            <strong>Golden Accounting & POS (Mobile App)</strong>  
+            <br>Android-based **POS system for retail businesses** (500k+ downloads).  
+            <br><a href="https://play.google.com/store/apps/details?id=com.goldendream.account&hl=en">View on Google Play</a>
+        </li>
+        <li>
+            <strong>Business Accounting System (Mobile App)</strong>  
+            <br>Built an **accounting & warehouse management system** with multi-currency support.  
+            <br><a href="https://play.google.com/store/apps/details?id=com.goldendream.business&hl=en">View on Google Play</a>
+        </li>
+        <li>
+            <strong>Golden Waiter (Restaurant Ordering App)</strong>  
+            <br>Automated restaurant orders integrated with accounting software.  
+            <br><a href="https://play.google.com/store/apps/details?id=com.goldendream.waiter&hl=en">View on Google Play</a>
+        </li>
+        <li>
+            <strong>Golden Delivery (Order Management App)</strong>  
+            <br>Developed an app for **tracking and managing customer orders and invoices**.  
+            <br><a href="https://play.google.com/store/apps/details?id=com.goldendream.delivery&hl=en">View on Google Play</a>
+        </li>
+        <li>
+            <strong>Amwal ERP System</strong>  
+            <br>Created an **integrated E-commerce ERP** system using **Laravel Bagisto**.  
+            <br><a href="http://amwal.doe.net.sa/public/admin/login">View Project</a>
+        </li>
+        <li>
+            <strong>Napatapay Electronic Payment System</strong>  
+            <br>Developed a **mobile payment solution** using **React Native, Node.js, and MongoDB**.  
+            <br><a href="https://appagg.com/android/finance/napatapay-32750458.html?hl=ar">View on Google Play</a>  
+            <br><a href="https://github.com/ayman12015/Napata">View Source Code</a>
+        </li>
+    </ul>
+</div>
+
+
+     <!-- Soft Skills -->
+     <div class="section">
+        <div class="section-title">Soft Skills</div>
+        <ul>
+            <li>Effective **communication & collaboration** in cross-functional teams.</li>
+            <li>Strong **problem-solving & analytical thinking** skills.</li>
+            <li>Ability to manage multiple projects under **tight deadlines**.</li>
+            <li>Adaptability to **new technologies & frameworks**.</li>
+            <li>Experience in **mentoring junior developers**.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="section-title">EXPERIENCE</div>
+    
+        <!-- CLEAR Engineering -->
+        <div class="experience-item">
+            <div class="job-title">Web Developer</div>
+            <div class="company">CLEAR Engineering Consultants</div>
+            <div class="date">11/2024 - Present | Riyadh, Saudi Arabia</div>
+            <ul>
+                <li>Designed and maintained web applications using modern MERN stack</li>
+                <li>Implemented CI/CD pipelines reducing deployment time by 40%</li>
+                <li>Integrated third-party APIs for supply chain management systems</li>
+                <li>Conducted post-implementation reviews improving client satisfaction by 25%</li>
+            </ul>
+        </div>
+    
+        <!-- Emirate of Asir -->
+        <div class="experience-item">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="company">Emirate of Asir Province (via 2P Perfect Presentation)</div>
+            <div class="date">03/2022 - 01/2025 | Abha, Saudi Arabia</div>
+            <ul>
+                <li>Developed citizen service portal handling 100,000+ users with React frontend</li>
+                <li>Engineered backend systems using Node.js/Express handling 500k+ monthly API calls</li>
+                <li>Integrated Nafaz biometric authentication improving security by 30%</li>
+                <li>Optimized MongoDB queries reducing response time by 35%</li>
+                <li>Implemented Odoo ERP modules for HR and project management</li>
+            </ul>
+        </div>
+    
+        <!-- 2P Perfect Presentation -->
+        <div class="experience-item">
+            <div class="job-title">Web & Mobile Developer</div>
+            <div class="company">2P Perfect Presentation</div>
+            <div class="date">03/2022 - 11/2024 | Riyadh, Saudi Arabia</div>
+            <ul>
+                <li>Developed <a href="https://portal.aseer.gov.sa/">Emirate of Asir Portal</a> using Drupal CMS</li>
+                <li>Created employee management system with Active Directory integration</li>
+                <li>Built multi-service citizen portal using Laravel (<a href="https://apps.aseer.gov.sa/">apps.aseer.gov.sa</a>)</li>
+                <li>Implemented React/Django ERP system for inventory management</li>
+            </ul>
+        </div>
+    
+        <!-- Golden Accounting -->
+        <div class="experience-item">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="company">Golden Accounting</div>
+            <div class="date">01/2021 - 01/2022 | Saudi Arabia</div>
+            <ul>
+                <li>Developed multi-vendor ERP system for retail businesses</li>
+                <li>Created Android POS application (<a href="https://play.google.com/store/apps/details?id=com.goldendream.account&hl=en">Link</a>)</li>
+                <li>Implemented warehouse management with barcode integration</li>
+                <li>Enhanced company website (<a href="https://golden-acc.com/">golden-acc.com</a>)</li>
+            </ul>
+        </div>
+    
+        <!-- Digital Order Technology -->
+        <div class="experience-item">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="company">Digital Order Technology</div>
+            <div class="date">01/2020 - 01/2021 | Khartoum, Sudan</div>
+            <ul>
+                <li>Developed Laravel-based E-commerce ERP system</li>
+                <li>Integrated payment gateways and inventory modules</li>
+                <li>Implemented real-time sales analytics dashboard</li>
+            </ul>
+        </div>
+    
+        <!-- Pinnacle Multi-Activities -->
+        <div class="experience-item">
+            <div class="job-title">Odoo Developer</div>
+            <div class="company">Pinnacle Multi-Activities</div>
+            <div class="date">07/2019 - 01/2020 | Khartoum, Sudan</div>
+            <ul>
+                <li>Customized Odoo modules for inventory management</li>
+                <li>Developed reporting modules for financial systems</li>
+                <li>Integrated third-party logistics APIs</li>
+            </ul>
+        </div>
+    
+        <!-- Mazin Developed Projects -->
+        <div class="experience-item">
+            <div class="job-title">Full Stack Developer</div>
+            <div class="company">Mazin Developed Projects</div>
+            <div class="date">08/2018 - 02/2019 | Sudan</div>
+            <ul>
+                <li>Developed Napatapay mobile payment solution (<a href="https://github.com/ayman12015/Napatapay">GitHub</a>)</li>
+                <li>Implemented React-based government payment system</li>
+                <li>Integrated Jira for project management workflows</li>
+            </ul>
+        </div>
+    
+        <!-- Morgan Zone -->
+        <div class="experience-item">
+            <div class="job-title">Web Developer Trainee</div>
+            <div class="company">Morgan Zone Co. Ltd</div>
+            <div class="date">08/2017 - 10/2017 | Khartoum</div>
+            <ul>
+                <li>Developed PHP/CodeIgniter web applications</li>
+                <li>Optimized MySQL database performance by 40%</li>
+                <li>Implemented security measures against SQL injection</li>
+                <li>Created technical documentation for systems</li>
+            </ul>
+        </div>
+    </div>
+
+   <!-- Certifications & Courses -->
+<div class="section">
+    <div class="section-title">Certifications & Courses</div>
+    <ul>
+        <li>
+            <strong>AWS Fundamentals</strong>  
+            <br>Completed AWS cloud certification focusing on **cloud migration & deployment strategies**.  
+            <br><a href="https://www.coursera.org/account/accomplishments/verify/QATJPNBDZWGP">View Certification</a>
+        </li>
+        <li>
+            <strong>Google Data Analytics Certificate</strong>  
+            <br>Google-certified in **data visualization, SQL, and statistical analysis**.  
+            <br><a href="https://coursera.org/share/0a77aff9435e2ffa031c84355be93fe7">View Certification</a>
+        </li>
+        <li>
+            <strong>Odoo Functional Certification</strong>  
+            <br>Certified in **Odoo ERP system development & customization**.  
+            <br><a href="https://www.odoo.com/slides/odoo-certification-sample-test-50">View Certification</a>
+        </li>
+        <li>
+            <strong>Introduction to Back-End Development</strong> (Meta / Facebook)  
+            <br>Completed training on **backend architectures, APIs, and databases**.  
+            <br><a href="https://www.coursera.org/account/accomplishments/verify/QATJPNBDZWGP">View Course</a>
+        </li>
+    </ul>
+</div>
+
+
+    <!-- Languages -->
+    <div class="section">
+        <div class="section-title">Languages</div>
+        <ul>
+            <li>English (Professional Proficiency)</li>
+            <li>Arabic (Native)</li>
+        </ul>
+    </div>
+
+    <script>
+     // vCard Data (properly formatted)
+const vCardData = `BEGIN:VCARD
+VERSION:3.0
+FN:Ayman Osman
+ORG:CLEAR Engineering Consultants
+TITLE:Full Stack Developer
+TEL:+966531505513
+EMAIL:ayman4work44@gmail.com
+URL:https://linkedin.com/in/ayman-osman-27bb4bb1
+ADR:Riyadh, Saudi Arabia
+END:VCARD`;
+
+// Generate QR Code with vCard data
+new QRCode(document.getElementById("qrcode"), {
+    text: vCardData,
+    width: 150,
+    height: 150,
+    colorDark: "#2c3e50",
+    colorLight: "#ffffff",
+    correctLevel: QRCode.CorrectLevel.H
+});
+
+
+    </script>
+</body>
+</html>
